@@ -2,10 +2,12 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class evSahibi{
+     // Ev sahibinin bağlı olduğu bina
     Bina binaName;
     String name;
     String soyisim;
     Daire daire;
+    // Ev sahibinin sahip olduğu dairelerin listesi
     ArrayList<Daire>daireler;
 
 
@@ -22,7 +24,7 @@ public class evSahibi{
                 "\nbinanın adresi: "+binaName.address+"\nBinanın katsayısı "+binaName.getNumberOfFloors());
 
     }
-
+    //ev sahibinin sahip oldugu daireleri eklemek için
     public void addApartment(Daire daire) {
 
         daireler.add(daire);
