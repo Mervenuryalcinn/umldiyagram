@@ -12,7 +12,9 @@ public class Bina extends Konut{
     }
 
     public Bina(String address,int numberOfFloors) {
+         // Üst sınıfın (Konut) kurucu metodunu çağırarak adres bilgisini ayarlamak için
         super(address);
+         // numberOfFloors alanını kurucu metod aracılığıyla ayarlamak için
         this.numberOfFloors=numberOfFloors;
 
 
@@ -20,7 +22,9 @@ public class Bina extends Konut{
     }
     @Override
     void displayInfo(){ //Bilgileri görüntüleme demektir.
+         // Üst sınıfın (Konut) displayInfo metodunu çağırarak adres bilgisini görüntüle
         super.displayInfo();
+         // Bina sınıfına ait kat sayısı bilgisini görüntüle
         System.out.println("kat sayısı " +numberOfFloors);
 
     }
