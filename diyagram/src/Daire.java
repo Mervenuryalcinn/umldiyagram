@@ -7,7 +7,7 @@ public class Daire extends Konut{
         this.apartmentNumber=apartmentNumber;
         this.apartmanFloors=apartmanFloors;
     }
-
+     // Karşılaştırma yapılır, sıralama düzenine göre değer döndürülür
     public int compareTo(Daire daire) {
         if (this.apartmentNumber < daire.apartmentNumber) {
             return -1;
@@ -29,6 +29,6 @@ public class Daire extends Konut{
         System.out.println("Apartment Number:"+ apartmentNumber);
 
         //Bilgileri görüntüleme demektir.
-        //   public int compareTo(Daire);
+        
     }
 }
